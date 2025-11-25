@@ -4,19 +4,53 @@
 
 <html>
 <head runat="server">
-    <title></title>
-    <asp:ContentPlaceHolder id="head" runat="server">
+    <title>ספיר</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style>
+        img.gallery {
+            width: 200px;
+            height: 120px;
+
+        }
+
+        td {
+            text-align: center;
+        }
+    </style>
 </head>
-<body>
-    <h1> Master start </h1>
-    <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
-    </form>
-       <h1> Master end </h1>
+<body dir="rlt" style="background-color: lavender">
+    <center>
+        <table border="1" style="width: 90%; height: 900px">
+            <tr style="height: 60px">
+                <td colspan="2">
+                    <font style="color: black; font-size: 50px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">הפרויקט הראשון שלי</font>
+                </td>
+            </tr>
+            <tr style="height: 150px">
+                <td>
+                    <a href="homePage.aspx">
+                        <img class="gallery" src="images/homepage.png" /></a>
+
+                    <a href="harsma.aspx">
+                        <img class="gallery" src="images/הרשמה.png" /></a>
+
+                    <a href="signIN.aspx">
+                        <img class="gallery" src="images/כניסה.png" /></a>
+
+                </td>
+            </tr>
+            <tr>
+
+                <td style ="vertical-align: top">
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                </td>
+            </tr>
+
+        </table>
+    </center>
 </body>
 </html>
