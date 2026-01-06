@@ -30,13 +30,43 @@
             <tr style="height: 150px">
                 <td>
                     <a href="homePage.aspx">
-                        <img class="gallery" src="images/homepage.png" /></a>
+                        <img class="gallery" < src="images/דףהבית.png" /></a>
+
+                      <a href="bio.aspx">
+      <img class="gallery" src="images/אודות.png" /></a>
+
+                      <a href="galery.aspx">
+      <img class="gallery" src="images/גלריה.png" /></a>
+
+                      <a href="manege.aspx">
+      <img class="gallery" src="images/מנהל.png" /></a>
 
                     <a href="harsma.aspx">
                         <img class="gallery" src="images/הרשמה.png" /></a>
 
                     <a href="signIN.aspx">
-                        <img class="gallery" src="images/כניסה.png" /></a>
+                        <img class="gallery" src="images/כניסהה.png" /></a>
+
+                     <a href="exit.aspx">
+     <img class="gallery" src="images/יציאה.png" /></a>
+
+                                    <a href="updateS.aspx">
+<img class="gallery" src="images/עדכון%20פרטים.png" /></a>
+>
+
+                                    <a href="simpleSearch.aspx">
+<img class="gallery"  src="images/חיפוש%20פשוט.png" /></a>
+
+                    
+                                    <a href="form.aspx">
+<img class="gallery"  src="images/טופס.png"  /></a>
+
+                    
+                                    <a href="simpleSearch.aspx">
+<img class="gallery"  src="images/חיפוש%20פשוט.png" /></a>
+
+
+
 
                 </td>
             </tr>
