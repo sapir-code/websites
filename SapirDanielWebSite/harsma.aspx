@@ -6,16 +6,16 @@
     <h1>הרשמה </h1>
  
  <form name="formPage" method="post" runat="server" >
-     שם מלא: <input type="text" name="fullname" id="fullname" placeholder="רשום שם">
+  <input type="text" name="fullname" id="fullname" placeholder="רשום שם">    :שם מלא
      <br />
-     כתובת מייל: <input type="text" name="email" id="email" placeholder="example@gmail.com">
+     <input type="text" name="email" id="email" placeholder="example@gmail.com">  :כתובת מייל 
  <br />
-     סיסמה: <input type="text" name="pasword" id="pasword" placeholder="הכנס סיסמה">
+    <input type="text" name="pasword" id="pasword" placeholder="הכנס סיסמה">   :סיסמה
  <br />
-         כרטיס אשראי: <input type="text" name="card" id="card" placeholder="הכנס פרטי אשראי ">
+
 <br />
-    הערות:
-      <textarea rows="5" cols="30" name="textarea1" id="textarea1" placeholder="תסיר/י דאגה מליבך! פרטי האשראי שלך הולכים למקום בטוח"></textarea>
+
+      <textarea rows="5" cols="30" name="textarea1" id="textarea1" placeholder="מלל חופשי"></textarea>  :הערות
  <br />
     </form>
 

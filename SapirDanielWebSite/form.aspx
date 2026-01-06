@@ -2,8 +2,10 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h1>טופס דוגמא</h1>
-    <form name="formPage" method="post" runat="server" text-align="right">
+
+    <form name="formPage" method="post" runat="server" style="direction: rtl; text-align: right;">
+  
+            <h1 style ="text-align:right;">טופס דוגמא</h1>
         שם פרטי: <input type="text" name="firstname" id="firstname" placeholder="example">
         <br />
         מקצועות אהובים: 
@@ -30,7 +32,22 @@
         </select>
         <br />
         <input id="Submit1" type="submit" value="שלח" />
+          
+  
     </form>
+    <hr />
+
+  
+    <%=age %>
+    <br />
+     <%=name %>
+    <br />
+     <%=subjects %>
+    <br />
+     <%=animal %>
+    <br />
+     <%=textareaStr %>
+
 </asp:Content>
 
 

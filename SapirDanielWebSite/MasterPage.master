@@ -20,7 +20,7 @@
     </style>
 </head>
 <body dir="rlt" style="background-color: lavender">
-    <center>
+    <!--center-->
         <table border="1" style="width: 90%; height: 900px">
             <tr style="height: 60px">
                 <td colspan="2">
@@ -51,6 +51,6 @@
             </tr>
 
         </table>
-    </center>
+    <!--.center-->
 </body>
 </html>
