@@ -12,7 +12,7 @@
  <br />
     <input type="text" name="pasword" id="pasword" placeholder="הכנס סיסמה">   :סיסמה
  <br />
-
+ 
 <br />
 
       <textarea rows="5" cols="30" name="textarea1" id="textarea1" placeholder="מלל חופשי"></textarea>  :הערות
