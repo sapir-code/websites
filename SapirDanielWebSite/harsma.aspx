@@ -17,7 +17,9 @@
 
       <textarea rows="5" cols="30" name="textarea1" id="textarea1" placeholder="מלל חופשי"></textarea>  :הערות
  <br />
+     <input type="submit" value="שלח" />
     </form>
+    <%=strResult %>
 
 
 </asp:Content>
