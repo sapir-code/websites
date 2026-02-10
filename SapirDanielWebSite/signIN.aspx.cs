@@ -16,20 +16,27 @@ public partial class signIN : System.Web.UI.Page
             string email = Request.Form["email"];
             string password = Request.Form["password"];
 
-
-             string sqSelect =
-                "SELECT * FROM tUsers " +
-                "WHERE Email = N' " + email + "' " + 
-                "AND UserPassword = N'" + password + "'";
-
-
-            bool userExists = MyAdoHelper.IsExist(sqSelect);
-
-            if (!userExists)
-                stResult = "אימייל או סיסמה שגויים";
+            if (email == "sapir.daniel1010@gmail.com" && password == "rspdan11")
+                Response.Redirect("manege.aspx");
             else
-                stResult = " משתמש רשום";
+            {
 
+                string sqSelect =
+                   "SELECT * FROM tUsers " +
+                   "WHERE email = N'" + email + "' " +
+                   "AND password = N'" + password + "'";
+
+
+                bool userExists = MyAdoHelper.IsExist(sqSelect);
+
+                if (!userExists)
+                    stResult = "אימייל או סיסמה שגויים";
+                else
+                    //stResult = " משתמש רשום";
+                    Response.Redirect("homePage.aspx");
+                
+            }
+            
             }
     }
 }
