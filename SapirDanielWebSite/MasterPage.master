@@ -52,7 +52,7 @@
 
                                     <a href="updateS.aspx">
 <img class="gallery" src="images/עדכון%20פרטים.png" /></a>
->
+
 
                                     <a href="simpleSearch.aspx">
 <img class="gallery"  src="images/חיפוש%20פשוט.png" /></a>
@@ -71,11 +71,13 @@
                 </td>
             </tr>
             <tr>
-
+                
                 <td style ="vertical-align: top">
-
+<center>
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                     </asp:ContentPlaceHolder>
+
+                    </center>
 
                 </td>
             </tr>
