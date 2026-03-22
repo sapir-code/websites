@@ -8,14 +8,16 @@
 
     <form name="managerForm" method="post" runat="server">
         <table>
+           
             <tr>
-                <td>  שם מלא </td>
-                <input type="text" name="fullname" id="fullname" placeholder="רשום שם">   
+            
+                <input type="text" name="fn" id="fn" placeholder="רשום שם">   
             </tr>  
     <br />
-             <td>  אימייל </td>
-    <input type="text" name="email" id="email" placeholder="example@gmail.com">
-
+             <br />
+            
+   <input type="text" name="ln" id="ln" placeholder="רשום שם משפחה"> 
+              <td>  היי לתקן את זה </td>
          <input type="submit" value="שלח" />
             
         </table> 

@@ -10,21 +10,25 @@ public partial class manege : System.Web.UI.Page
 {
 
     public string st = ""; // <table>
-    public string fullname;
-    public string email;
+    public string fn;
+    public string ln;
 
     protected void Page_Load(object sender, EventArgs e)
     {
 
         if (IsPostBack)
         {
-            string fullname = Request.Form["fullname"];
-            string email = Request.Form["email"];
+            string FirstName = Request.Form["fn"];
+            string LastName = Request.Form["ln"];
 
             // אוסף את כל הרשומות
-            string sql = "SELECT * FROM  tUsers  WHERE" +
-              " email = N'" + email + "' AND " +
-               "fullname = N'" + fullname + "'";
+            string sql =
+            "SELECT * FROM  tUsers " +
+             "WHERE FirstName LIKE N'%" + fn + "%' " +
+               "AND LastName LIKE N'%" + ln + "%'";
+
+
+
 
 
             DataTable dt = MyAdoHelper.ExecuteDataTable(sql);
