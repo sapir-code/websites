@@ -11,7 +11,6 @@
         img.gallery {
             width: 200px;
             height: 120px;
-
         }
 
         td {
@@ -21,42 +20,33 @@
 </head>
 <body dir="rtl" style="background-color: mintcream">
    
-    שלום  <%=Session["email"] %>
+    שלום  <%=Session["name"] %>
     <!--center-->
+
         <table border="1" style="width: 90%; height: 900px">
             <tr style="height: 60px">
                 <td colspan="2">
-                    <font style="color: black; font-size: 50px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">עגלות קפה</font>
+                   <font style="color: black; font-size: 50px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">עגלות קפה</font>
                 </td>
             </tr>
             <tr style="height: 150px">
                 <td>
-                    <a href="homePage.aspx">
-                        <img class="gallery" < src="images/דףהבית.png" /></a>
 
-                      <a href="bio.aspx">
-      <img class="gallery" src="images/אודות.png" /></a>&nbsp;
+      <a href="homePage.aspx"> <img class="gallery" < src="images/דףהבית.png" /></a>
 
-                      <a href="manege.aspx">
-      <img class="gallery" src="images/מנהל.png" /></a>
+      <a href="bio.aspx"> <img class="gallery" src="images/אודות.png" /></a>
 
-                    <a href="harsma.aspx">
-                        <img class="gallery" src="images/הרשמה.png" /></a>
+      <a href="manege.aspx"> <img class="gallery" src="images/מנהל.png" /></a>
+     
+      <a href="harsma.aspx"> <img class="gallery" src="images/הרשמה.png" /></a>
+                      
+       <a href="signIN.aspx"> <img class="gallery" src="images/כניסהה.png" /></a>
+                       
+       <a href="exit.aspx">  <img class="gallery" src="images/יציאה.png" /></a>&nbsp;
 
-                    <a href="signIN.aspx">
-                        <img class="gallery" src="images/כניסהה.png" /></a>
+       <a href="simpleSearch.aspx"> <img class="gallery"  src="images/חיפוש%20פשוט.png" /></a>
 
-                     <a href="exit.aspx">
-     <img class="gallery" src="images/יציאה.png" /></a>&nbsp;
-
-
-                                    <a href="simpleSearch.aspx">
-<img class="gallery"  src="images/חיפוש%20פשוט.png" /></a>
-
-                    
-                                    <a href="form.aspx">
-<img class="gallery"  src="images/טופס.png"  /></a>&nbsp;
-
+        <a href="form.aspx"> <img class="gallery"  src="images/טופס.png"  /></a>&nbsp;
 
 
 

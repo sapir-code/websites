@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -18,7 +19,8 @@ public partial class signIN : System.Web.UI.Page
 
             if (email == "sapir.daniel1010@gmail.com" && password == "rspdan11")
             {
-                Session["email"] = "  ספיר המנהלת";
+                Session["nihol"] = "ok";
+                Session["name"] = "  ספיר המנהלת";
                 Response.Redirect("manege.aspx");
             }
             else
@@ -30,17 +32,19 @@ public partial class signIN : System.Web.UI.Page
                    "AND password = N'" + password + "'";
 
 
-                bool userExists = MyAdoHelper.IsExist(sqSelect);
+                DataTable dt = MyAdoHelper.ExecuteDataTable(sqSelect);
+               
 
-                if (!userExists)
+                if (dt.Rows.Count == 0)
                 {
                     stResult = "אימייל או סיסמה שגויים";
-                    Session["email"] = "  אורח ";
+                    Session["name"] = "  אורח ";
                 }
                 else
                 {
                     //stResult = " משתמש רשום";
-                    Session["email"] = "  משתמש רשום ";
+                    Session["name"] = dt.Rows[0]["fullname"];
+                    Session["user"] = "ok";
                     Response.Redirect("homePage.aspx");
                   
                 }
