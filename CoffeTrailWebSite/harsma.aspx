@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="harsma.aspx.cs" Inherits="harsma" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"> // בגלל מאסטר פייג
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"><!--בגלל מאסטר פייג-->
+    <link href="css/login.css" rel="stylesheet" />
     <script language="javascript"> // שפת גאבה
         function checkAll() {
             // ניקוי שדות
@@ -48,30 +49,37 @@
 
     </script>
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h1>הרשמה </h1>
  
- <form name="formPage" method="post" runat="server" onsubmit ="return checkAll();">
+     <form name="formPage" method="post" runat="server" onsubmit ="return checkAll();">
 
-  <input type="text" name="fullname" id="fullname" placeholder="רשום שם">    :שם מלא
-     <br />
-     <span id ="fnErr"></span> // הוספה של רינת
+         שם מלא:
+          <input type="text" name="fullname" id="fullname" placeholder="רשום שם">   
+             <br />
+             <span id ="fnErr"></span><!--הוספה של רינת-->
 
+         
+         איימיל:
+             <input type="text" name="email" id="email" placeholder="example@gmail.com"> 
+         <br />
+               <span id ="emailErr"></span><!--הוספה של רינת-->
 
-     <input type="text" name="email" id="email" placeholder="example@gmail.com">  :כתובת מייל 
- <br />
-       <span id ="emailErr"></span> // הוספה של רינת
+         
+         סיסמה:
+            <input type="text" name="pasword" id="pasword" placeholder="הכנס סיסמה">
+         <br />
+          <span id ="passErr"></span><!--הוספה של רינת-->
 
+         
+          הערות:
+        <br />
+              <textarea rows="5" cols="30" name="textarea1" id="textarea1" placeholder="מלל חופשי"></textarea>
+         <br />
+         <input type="submit" value="שלח" />
+       </form>
 
-    <input type="text" name="pasword" id="pasword" placeholder="הכנס סיסמה">   :סיסמה
- <br />
-  <span id ="passErr"></span> // הוספה של רינת
-<br />
-
-      <textarea rows="5" cols="30" name="textarea1" id="textarea1" placeholder="מלל חופשי"></textarea>  :הערות
- <br />
-     <input type="submit" value="שלח" />
-    </form>
     <%=strResult %>
 
 

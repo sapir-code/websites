@@ -2,69 +2,45 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="he" dir="rtl">
 <head runat="server">
+    <link href="css/Master.css" rel="stylesheet" />
     <title>עגלות הקפה של ישראל</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <style>
-        img.gallery {
-            width: 200px;
-            height: 120px;
-        }
-
-        td {
-            text-align: center;
-        }
-    </style>
 </head>
 <body dir="rtl" style="background-color: mintcream">
    
     שלום  <%=Session["name"] %>
     <!--center-->
 
-        <table border="1" style="width: 90%; height: 900px">
-            <tr style="height: 60px">
-                <td colspan="2">
-                   <font style="color: black; font-size: 50px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">עגלות קפה</font>
-                </td>
-            </tr>
-            <tr style="height: 150px">
-                <td>
+    <ul>
 
-      <a href="homePage.aspx"> <img class="gallery" < src="images/דףהבית.png" /></a>
+      <li><a href="homePage.aspx">דף הבית</a></li>
 
-      <a href="bio.aspx"> <img class="gallery" src="images/אודות.png" /></a>
+      <li><a href="bio.aspx">אודות</a></li>
 
-      <a href="manege.aspx"> <img class="gallery" src="images/מנהל.png" /></a>
+      <li><a href="manege.aspx">מנהל</a></li>
      
-      <a href="harsma.aspx"> <img class="gallery" src="images/הרשמה.png" /></a>
+      <li><a href="harsma.aspx">הרשמה</a></li>
                       
-       <a href="signIN.aspx"> <img class="gallery" src="images/כניסהה.png" /></a>
+       <li><a href="signIN.aspx">התחברות</a></li>
                        
-       <a href="exit.aspx">  <img class="gallery" src="images/יציאה.png" /></a>&nbsp;
+       <li><a href="exit.aspx">יציאה</a>&nbsp;</li>
 
-       <a href="simpleSearch.aspx"> <img class="gallery"  src="images/חיפוש%20פשוט.png" /></a>
-
-        <a href="form.aspx"> <img class="gallery"  src="images/טופס.png"  /></a>&nbsp;
+        </ul>
 
 
+    <!--<li><a href="simpleSearch.aspx">חיפוש פשוט</a></li></a>-->
 
-                </td>
-            </tr>
-            <tr>
-                
-                <td style ="vertical-align: top">
+
+
 <center>
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                     </asp:ContentPlaceHolder>
 
                     </center>
 
-                </td>
-            </tr>
-
-        </table>
     <!--.center-->
 </body>
 </html>

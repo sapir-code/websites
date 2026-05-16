@@ -1,0 +1,43 @@
+﻿body { 
+    background-color: #FFF4FA;
+    font-family: Calibri;
+}
+
+/*עיצוב על הדף*/
+form { 
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px lightgray;
+    text-align: right;
+}
+
+/*עיצוב של איפה שרושמים*/
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+/*עיצוב כפתור שליחה*/
+input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    background-color: #F5C1E1;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+    /*עיצוב כפתור שליחה אחרי הלחיצה*/ 
+    input[type=submit]:hover {
+        background-color: #eba8d2;
+    }
+

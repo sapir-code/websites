@@ -1,0 +1,52 @@
+﻿
+
+input {
+    font-size: 16px;
+    float: right;
+}
+
+
+h3 {
+    font-size: 24px;
+}
+
+.signup-page {
+    width: 600px;
+    padding: 8%;
+    margin: auto;
+}
+
+.form {
+    background: #000000;
+    width: 500px;
+    padding: 45px;
+    text-align: center;
+    border-radius: 10%;
+    border: 10px solid #404040;
+}
+
+    .form input {
+        font-family: "Tahoma";
+        border-radius: 20px;
+        width: 500px;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+        background: #606060;
+        height: 50px;
+    }
+
+.label {
+    color: Darkgrey;
+    padding: 50px;
+}
+
+body {
+    font-family: 'Tahoma';
+    margin: 0;
+    padding: 0;
+    color: Darkgrey;
+}
+
