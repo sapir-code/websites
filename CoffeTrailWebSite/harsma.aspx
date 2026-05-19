@@ -36,14 +36,24 @@
                 return false;
             }
 
+
+            if (name.length() > 10) {
+                flErr.innerHTML = " שם לא יכול להכיל יותר מ10 תווים";
+                return false;
+            }
+
             return true;
         }
 
         function checkEmail() {
+
+
             return true;
         }
 
         function checkpass() {
+
+
             return true;
         }
 

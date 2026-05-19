@@ -11,10 +11,18 @@
 </head>
 <body dir="rtl" style="background-color: mintcream">
    
+
+    <%if (Session["nihol"]== "ok" || Session["user"]== "ok"){ %>
+
     שלום  <%=Session["name"] %>
+
+   <%  } %>
     <!--center-->
 
     <ul>
+
+        
+         <li><a href="homePage.aspx">דף הבית</a></li>
 
       <li><a href="homePage.aspx">דף הבית</a></li>
 
