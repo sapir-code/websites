@@ -10,7 +10,7 @@
         <table>
            
  
-        <input type="submit" value="הצג עגלות" />
+        <input type="submit" value="הצג דירוגי עגלות" />
             
         </table> 
 </form>
