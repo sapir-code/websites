@@ -9,7 +9,7 @@
             emailErr.innerHTML = "";
             passErr.innerHTML = "";
 
-            result = true;
+           var result = true;
 
 
             // בדיקת שגיאות
@@ -19,7 +19,7 @@
             if (!checkEmail())
                 result = false;
 
-            if (!checkpass)
+            if (!checkpass())
                 result = false;
 
             
@@ -29,33 +29,96 @@
         }
 
         function checkFullName() {
-            name = Document.getElementByid("fl").value;
+           var name = document.getElementById("fullname").value;
 
-            if (name.length() < 2) {
-                flErr.innerHTML = " שם חייב להכיל לפחות שני תווים";
+            if (name.length < 2) {
+                fnErr.innerHTML = " שם חייב להכיל לפחות שני תווים";
                 return false;
             }
 
+            for (var i = 0; i < name.length; i++) {
+                var ch = name.charAt(i);
 
-            if (name.length() > 10) {
-                flErr.innerHTML = " שם לא יכול להכיל יותר מ10 תווים";
+                if (!(ch >= 'A' && ch <= 'Z') &&
+                    !(ch >= 'a' && ch <= 'z') &&
+                    !(ch >= 'א' && ch <= 'ת') &&
+                    ch != ' ') {
+
+                    fnErr.innerHTML = "השם אינו יכול להכיל מספרים או תווים מיוחדים";
+                    return false;
+                }
+            }
+
+            if (name.length > 10) {
+                fnErr.innerHTML = " שם לא יכול להכיל יותר מ10 תווים";
                 return false;
             }
 
             return true;
         }
+
+
+
 
         function checkEmail() {
+            var email = document.getElementById("email").value;
 
+            var atPos = email.indexOf("@");
+
+            if (atPos == -1) {
+                emailErr.innerHTML = "חסר @ בכתובת המייל";
+                return false;
+            }
+
+            if (atPos == 0) {
+                emailErr.innerHTML = "@ לא יכול להיות התו הראשון";
+                return false;
+            }
 
             return true;
         }
+
+
+
 
         function checkpass() {
+                var pass = document.getElementById("pasword").value;
 
+                if (pass.length < 8) {
+                    passErr.innerHTML = "הסיסמה חייבת להכיל לפחות 8 תווים";
+                    return false;
+                }
 
-            return true;
-        }
+                if (pass.indexOf(" ") != -1) {
+                    passErr.innerHTML = "אסור להכניס רווחים בסיסמה";
+                    return false;
+                }
+
+                var hasLetter = false;
+                var hasDigit = false;
+
+                for (var i = 0; i < pass.length; i++) {
+                    var ch = pass.charAt(i);
+
+                    if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))
+                        hasLetter = true;
+
+                    if (ch >= '0' && ch <= '9')
+                        hasDigit = true;
+                }
+
+                if (!hasLetter) {
+                    passErr.innerHTML = "\n הסיסמה חייבת להכיל אות באנגלית \n";
+                    return false;
+                }
+
+                if (!hasDigit) {
+                    passErr.innerHTML = "הסיסמה חייבת להכיל ספרה";
+                    return false;
+                }
+
+                return true;
+            }
 
     </script>
 </asp:Content>
@@ -79,20 +142,20 @@
          שם מלא:
           <input type="text" name="fullname" id="fullname" placeholder="רשום שם">   
              <br />
-             <span id ="fnErr"></span><!--הוספה של רינת-->
-
+            <span id="fnErr" style="color:red"></span><!--הוספה של רינת--> 
+         <br />
          
          איימיל:
              <input type="text" name="email" id="email" placeholder="example@gmail.com"> 
          <br />
-               <span id ="emailErr"></span><!--הוספה של רינת-->
-
+              <span id="emailErr" style="color:red"></span><!--הוספה של רינת-->
+           <br />
          
          סיסמה:
-            <input type="text" name="pasword" id="pasword" placeholder="הכנס סיסמה">
+            <input type="password" name="pasword" id="pasword" placeholder="הכנס סיסמה">
          <br />
-          <span id ="passErr"></span><!--הוספה של רינת-->
-
+         <span id="passErr" style="color:red"></span><!--הוספה של רינת-->
+           <br />
          
           הערות:
         <br />

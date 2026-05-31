@@ -16,7 +16,7 @@
     <br />
              <br />
             
-   <input type="text" name="email" id="email" placeholder="רשום שם משפחה"> 
+   <input type="text" name="email" id="email" placeholder="רשום אימייל"> 
               <td>  היי לתקן את זה </td>
          <input type="submit" value="שלח" />
             
