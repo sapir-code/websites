@@ -10,8 +10,8 @@ public partial class manege : System.Web.UI.Page
 {
 
     public string st = ""; // <table>
-    public string fn;
-    public string ln;
+    //public string fn;
+    //public string ln;
 
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -19,13 +19,21 @@ public partial class manege : System.Web.UI.Page
         if (IsPostBack)
         {
             string fName = Request.Form["fn"];
-            string email = Request.Form["email"];
+            //string email = Request.Form["email"];
+
+
 
             // אוסף את כל הרשומות
-            string sql =
-            "SELECT * FROM  tUsers " +
-             "WHERE fullname LIKE N'%" + fn + "%' " +
-               "AND email LIKE N'%" + email + "%'";
+            string sql = 
+                "SELECT * FROM  tUsers ";
+
+            if(!String.IsNullOrEmpty(fName) )
+            {
+                sql += "WHERE fullname LIKE N'%" + fName + "%' ";
+            }
+          
+            
+            // + "or email LIKE N'%" + email + "%'";
 
 
 

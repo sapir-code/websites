@@ -7,20 +7,17 @@
 
 
     <form name="managerForm" method="post" runat="server">
-        <table>
-           
-            <tr>
+       
             
-                <input type="text" name="fn" id="fn" placeholder="רשום שם">   
-            </tr>  
-    <br />
-             <br />
+         שם: <input type="text" name="fn" id="fn" placeholder="רשום שם">   
             
-   <input type="text" name="email" id="email" placeholder="רשום אימייל"> 
-              <td>  היי לתקן את זה </td>
+    <br />   
+            
+
+
          <input type="submit" value="שלח" />
             
-        </table> 
+     
 </form>
 
     <% = st %>

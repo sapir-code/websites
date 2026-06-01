@@ -5,7 +5,7 @@
 
     <script>
   
-function checkTrailFields() {
+function checkAll() {
 
   
     trailErr.innerHTML = "";
@@ -130,15 +130,28 @@ function checkDesc() {
     <h1> הוספת עגלה </h1>
 
     
- <form name="formPage" method="post" runat="server" >
+ <form name="formPage" method="post" runat="server" onsubmit ="return checkAll();">
+
      <input type="text" name="trailName" id="trailName" placeholder="עגלה1" >  :שם עגלה
      <br />
+     <span style="color:red"  id="trailErr"></span>
+     <br />
+
      <input type="text" name="area" id="area" placeholder="שרון" >  :אזור
+    <br />
+     <span style="color:red"  id="areaErr"></span>
+     
  <br />
+
   <input type="image" name="pic" id="pic">   :תמונת העגלה - לשנות
 <br />
+
          <input type="text" name="address" id="address" placeholder="רח ,עיר ">  :כתובת העגלה
 <br />
+     <span style="color:red"  id="addressErr"></span>
+     <br />
+
+
 
 
          ימי פעילות: 
@@ -150,7 +163,8 @@ function checkDesc() {
     יום ה<input type="checkbox" name="day" value="חמישי" id="day5">  <br />
     יום ו<input type="checkbox" name="day" value="שישי" id="day6"> <br />
     יום ש<input type="checkbox" name="day" value="שבת" id="day7"> <br />
-
+     <br />
+<span style="color:red"  id="dayErr"></span>
 
  <br />
            
@@ -160,11 +174,15 @@ function checkDesc() {
  כן<input type="radio" name="radio1" value="כן" id="radio1"><br />
 לא<input type="radio" name="radio1" value="לא" id="radio2"><br />
 <br />
-
+<span style="color:red"  id="safeErr"></span>
+     <br />
 
 
       <textarea rows="5" cols="30" name="textarea1" id="textarea1" placeholder="מלל חופשי"></textarea>  :תיאור העגלה
  <br />
+     <span style="color:red"  id="descErr"></span>
+     <br />
+
      <input type="submit" value="שלח" />
     </form>
 
