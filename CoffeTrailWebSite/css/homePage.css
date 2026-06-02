@@ -1,0 +1,64 @@
+﻿
+/* כל העיצוב של הדף */
+.about-site {
+    width: 85%;
+    margin: 60px auto;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* העיצוב של כל הטקסט */
+.about-content {
+    width: 55%;
+    padding: 40px;
+    text-align: right;
+}
+    /* עיצוב של הכותרת */
+    .about-content h2 {
+        color: #5b3a29;
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+
+    /* עיצוב של פסקה */
+    .about-content p {
+        font-size: 18px;
+        line-height: 1.9;
+        color: #555;
+        margin-bottom: 18px;
+        font-family: Calibri;
+    }
+
+/* גודל תמונה */
+.about-image {
+    width: 45%;
+}
+    /* עיצוב נוסף של תמונה */
+    .about-image img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* שניהם יקבלו את כל רוחב המסך. */
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+
+                    /* לא בטוח צריך */ 
+/* לטלפונים - הגדרות מותאמות לפתיחה במצב שהוא לא מחשב */
+@media screen and (max-width: 900px) {
+    .about-site {
+        flex-direction: column;
+    }
+
+    .about-image img {
+        height: 280px;
+    }
+}

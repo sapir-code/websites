@@ -1,0 +1,101 @@
+﻿
+
+/* כותרת */
+h1 {
+    font-family: Calibri;
+    direction: rtl;
+
+    text-align: center;
+    color: #C76AA4;
+    margin-top: 30px;
+}
+
+/* הטופס */
+form {
+    width: 450px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px lightgray;
+    text-align: right;
+}
+
+/* שדות טקסט */
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* תיבת טקסט */
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-sizing: border-box;
+    resize: none;
+    font-size: 16px;
+}
+
+    /* כאשר המשתמש לוחץ על תיבת טקסט */
+    input[type=text]:focus,
+    textarea:focus {
+        outline: none;
+        border-color: #F5C1E1;
+        box-shadow: 0 0 5px #F5C1E1;
+    }
+
+/* צ'קבוקסים ורדיו */
+input[type=checkbox],
+input[type=radio] {
+    margin-right: 8px;
+    transform: scale(1.1);
+}
+
+/* הודעות שגיאה */
+span {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* כפתור שליחה */
+input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    background-color: #F5C1E1;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+    /* מעבר עכבר */
+    input[type=submit]:hover {
+        background-color: #EBA8D2;
+    }
+
+/* ריווח בין קבוצות */
+br {
+    line-height: 1.8;
+}
+
+/* תוצאת השליחה */
+.result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: green;
+}

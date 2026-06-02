@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="AddTrail.aspx.cs" Inherits="updateS" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-
+    <link href="css/addTrails.css" rel="stylesheet" />
 
     <script>
   
@@ -132,56 +132,62 @@ function checkDesc() {
     
  <form name="formPage" method="post" runat="server" onsubmit ="return checkAll();">
 
-     <input type="text" name="trailName" id="trailName" placeholder="עגלה1" >  :שם עגלה
-     <br />
+     :שם עגלה
+     <input type="text" name="trailName" id="trailName" placeholder="עגלה1" >  
+
      <span style="color:red"  id="trailErr"></span>
      <br />
+      <br />
 
-     <input type="text" name="area" id="area" placeholder="שרון" >  :אזור
-    <br />
-     <span style="color:red"  id="areaErr"></span>
+     :אזור
+     <input type="text" name="area" id="area" placeholder="שרון" > 
      
+     <span style="color:red"  id="areaErr"></span>
+      <br />
  <br />
 
-  <input type="image" name="pic" id="pic">   :תמונת העגלה - לשנות
+  <!-- <input type="file" name="pic" id="pic">   :תמונת העגלה - לשנות
 <br />
-
-         <input type="text" name="address" id="address" placeholder="רח ,עיר ">  :כתובת העגלה
-<br />
+     -->
+     :כתובת העגלה
+     <br />
+         <input type="text" name="address" id="address" placeholder="רח ,עיר "> 
      <span style="color:red"  id="addressErr"></span>
      <br />
-
-
-
+      <br />
 
          ימי פעילות: 
  <br />
-  יום א <input type="checkbox" name="day" value="ראשון" id="day1"> <br />
- יום ב  <input type="checkbox" name="day" value="שני" id="day2"> <br />
- יום ג   <input type="checkbox" name="day" value="שלישי"  id="day3"> <br />
-    יום ד<input type="checkbox" name="day" value="רביעי" id="day4">  <br />
-    יום ה<input type="checkbox" name="day" value="חמישי" id="day5">  <br />
-    יום ו<input type="checkbox" name="day" value="שישי" id="day6"> <br />
-    יום ש<input type="checkbox" name="day" value="שבת" id="day7"> <br />
-     <br />
+    יום א <input type="checkbox" name="day" value="ראשון" id="day1"> 
+    יום ב <input type="checkbox" name="day" value="שני" id="day2"> 
+    יום ג <input type="checkbox" name="day" value="שלישי"  id="day3"> 
+    יום ד <input type="checkbox" name="day" value="רביעי" id="day4">  
+    יום ה <input type="checkbox" name="day" value="חמישי" id="day5"> 
+    יום ו <input type="checkbox" name="day" value="שישי" id="day6"> 
+    יום ש <input type="checkbox" name="day" value="שבת" id="day7"> 
+
 <span style="color:red"  id="dayErr"></span>
 
  <br />
+     <br />
            
-     :מרחב מוגן 
-      
+     :מרחב מוגן
 <br />
- כן<input type="radio" name="radio1" value="כן" id="radio1"><br />
-לא<input type="radio" name="radio1" value="לא" id="radio2"><br />
-<br />
+ כן<input type="radio" name="radio1" value="כן" id="radio1">
+לא<input type="radio" name="radio1" value="לא" id="radio2">
+      <br />
 <span style="color:red"  id="safeErr"></span>
-     <br />
+   <br />
+      <br />
 
 
-      <textarea rows="5" cols="30" name="textarea1" id="textarea1" placeholder="מלל חופשי"></textarea>  :תיאור העגלה
- <br />
+      :תיאור העגלה
+      <textarea rows="5" cols="30" name="textarea1" id="textarea1" placeholder="מלל חופשי"></textarea> 
+
+       <br />
      <span style="color:red"  id="descErr"></span>
-     <br />
+      <br />
+     
 
      <input type="submit" value="שלח" />
     </form>

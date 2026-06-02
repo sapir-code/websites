@@ -15,10 +15,17 @@ public partial class simpleSearch : System.Web.UI.Page
     {
         if (IsPostBack)
         {
+            string name = Request.Form["trails"];
 
             // אוסף את כל הרשומות
             string sql =
             "SELECT * FROM  trails ";
+
+            if (!String.IsNullOrEmpty(name))
+            {
+                sql += "WHERE name LIKE N'%" + name + "%' ";
+            }
+
 
 
             DataTable dt = MyAdoHelper.ExecuteDataTable(sql);
@@ -29,12 +36,12 @@ public partial class simpleSearch : System.Web.UI.Page
             }
             else
             {
-                st += "<table border='1'>";
+                st += "<table class='pinkTable'>"; // יצירת טבלה - לעיצוב
                 st += "<tr >";
                 st += "<th> שם עגלה </th>";
                 st += "<th> אזור </th>";
                 st += "<th> כתובת </th>";
-                st += "<th> מקןם בטוח </th>";
+                st += "<th> מקום בטוח </th>";
                 st += "<th> ימי פעילות </th>";
                 st += "<th> הערות </th>";
                 st += "</tr>";

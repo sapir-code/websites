@@ -1,0 +1,19 @@
+﻿
+
+/* עיצוב של כפתור   */
+input[type=submit] {
+    background-color: #F5C1E1;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: Calibri;
+    font-size: 16px;
+    cursor: pointer;
+}
+    /*העכבר נמצא מעל כפתור השליחה*/
+    input[type=submit]:hover {
+        background-color: #FBE9FA;
+    }
+
+

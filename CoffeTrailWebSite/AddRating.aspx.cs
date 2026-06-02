@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Web;
@@ -11,12 +12,13 @@ public partial class harsma : System.Web.UI.Page
 {
     public string strResult = "";
 
+
     //riohamud//
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        
-        if(Page.IsPostBack)
+
+        if (Page.IsPostBack)
         {
             string fullname = Request.Form["fullname"];
             string trailName = Request.Form["trailName"];
@@ -25,19 +27,40 @@ public partial class harsma : System.Web.UI.Page
 
 
 
-     
-                string sqlInsert = 
+
+
+            string sqlInsert =
                 "INSERT INTO trailRating (fullname, trailName, score, note) " +
                 "VALUES (N'" + fullname + "', N'" + trailName + "', N'" + score + "', N'" + notes + "')";
 
 
 
-                MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);
+            MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);
 
-                Response.Redirect("homePage.aspx");
-            }
-
+            Response.Redirect("homePage.aspx");
         }
 
 
+        else
+        {
+
+            FillTrails();
+        }
+
     }
+    private void FillTrails()
+    {
+    
+
+        string sql = "SELECT name FROM trails";
+
+        DataTable dt = MyAdoHelper.ExecuteDataTable( sql);
+
+        allTrails.DataSource = dt;
+        allTrails.DataTextField = "name";
+        allTrails.DataValueField = "name";
+        allTrails.DataBind();
+    }
+
+}
+   

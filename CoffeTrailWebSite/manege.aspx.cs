@@ -25,7 +25,7 @@ public partial class manege : System.Web.UI.Page
 
             // אוסף את כל הרשומות
             string sql = 
-                "SELECT * FROM  tUsers ";
+                "SELECT * FROM tUsers  ";
 
             if(!String.IsNullOrEmpty(fName) )
             {
@@ -47,7 +47,7 @@ public partial class manege : System.Web.UI.Page
             }
             else
             {
-                st += "<table border='1'>";
+                st += "<table class='pinkTable'>"; // יצירת טבלה - לעיצוב
                 st += "<tr >";
                 st += "<th> שם מלא </th>";
                 st += "<th> מייל </th>";
