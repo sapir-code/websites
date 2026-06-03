@@ -1,13 +1,12 @@
 ﻿ul {
+
     width: fit-content;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #F5C1E1;
- 
 }
-
 li {
     float: left;
    
@@ -17,7 +16,7 @@ li {
         display: block;
         color: white;
         font-family: Calibri;
-        font-size: 22px;
+        font-size: 30px;
         padding: 18px;
         text-decoration: none;
     }

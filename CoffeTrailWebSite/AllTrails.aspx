@@ -4,6 +4,8 @@
 
     <link href="css/manege.css" rel="stylesheet" />
     <link href="css/butto.css" rel="stylesheet" />
+    <link href="css/addTrails.css" rel="stylesheet" /> 
+
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">

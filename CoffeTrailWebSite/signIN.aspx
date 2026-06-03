@@ -6,7 +6,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     
     
-      <style>
+    <!--  <style>
         body {
             background-image: url('images/rioooo.jpg');
             background-repeat: no-repeat;
@@ -14,6 +14,8 @@
             background-size: 100% 100%;
         }
     </style>
+    -->
+ 
 
         <h1> כניסה</h1>
 

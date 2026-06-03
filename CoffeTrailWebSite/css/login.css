@@ -1,7 +1,12 @@
-﻿body { 
+﻿body {
     background-color: #FFF4FA;
-    font-family: Calibri;
+    font-family: Aharoni;
 }
+h1 {
+    font-family: Aharoni;
+}
+
+
 
 /*עיצוב על הדף*/
 form { 

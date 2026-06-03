@@ -16,55 +16,57 @@ public partial class manege : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
 
-        if (IsPostBack)
+    
+        string sql =
+        "SELECT * FROM  trailRating ";
+
+
+        DataTable dt = MyAdoHelper.ExecuteDataTable(sql);
+
+        if (dt.Rows.Count == 0)
         {
-
-            // אוסף את כל הרשומות
-            string sql =
-            "SELECT * FROM  trailRating ";
-            
-
-
-
-
-
-            DataTable dt = MyAdoHelper.ExecuteDataTable(sql);
-
-            if (dt.Rows.Count == 0)
-            {
-                st = " אין נתונים";
-            }
-            else
-            {
-                st += "<table border='1'>";
-                st += "<tr >";
-                st += "<th> ID </th>";
-                st += "<th> שם מלא </th>";
-                st += "<th> שם העגלה </th>";
-                st += "<th> דירוג </th>";
-                st += "<th> הערות </th>";
-                st += "</tr>";
-
-            }
-
-
+            st = " אין נתונים";
+        }
+        else
+        {
+            st += "<div class='reviewsContainer'>"; // קופסה גדולה לכל הביקורות
 
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-                st += "<tr>";
-
-                for (int k = 0; k < dt.Columns.Count; k++)
-                {
-                    st += "<td>";
-                    st += dt.Rows[i][k];
-                    st += "</td>";
-                }
-                st += "</tr>";
+                st += "<div class='reviewBox'>"; // פתק אחד
+                st += "<h3>" + dt.Rows[i]["trailName"] + "</h3>";
+                st += "<p><strong>שם:</strong> "
+                      + dt.Rows[i]["fullname"] + "</p>";
+                st += "<p><strong>דירוג:</strong> "
+                      + dt.Rows[i]["score"] + "/5</p>";
+                st += "<p>"
+                      + dt.Rows[i]["note"] + "</p>";
+                st += "</div>"; // סוף הפתק
             }
+            st += "</div>"; // סוף הקופסה הגדולה
 
-            st += "</table> ";
         }
     }
 }
+
+
+    /*
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    st += "<tr>";
+
+                    for (int k = 0; k < dt.Columns.Count; k++)
+                    {
+                        st += "<td>";
+                        st += dt.Rows[i][k];
+                        st += "</td>";
+                    }
+                    st += "</tr>";
+                }
+
+                st += "</table> ";
+    */
+
+
 
 

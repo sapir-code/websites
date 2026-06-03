@@ -1,58 +1,55 @@
-﻿/* כל הטבלה */
-.pinkTable {
-    width: 75%;
-    margin: 30px auto; /*   30 פיקס למעלה ולמטה.*/
-    border-collapse: collapse; /*מחבר את כל הגבולות של התאים*/
-    background-color: white;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1); /* יוצר צל*/
-    border-radius: 15px;
-    overflow: hidden;
-    font-family: Calibri;
-}
+﻿
 
-    /*עיצוב שורת הכותרות*/
-    .pinkTable th {
-        background-color: #F5C1E1;
-        color: #4A4A4A;
-        font-size: 20px;
-        padding: 15px;
+    /* עיצוב של חיפוש + שליחה */
+    /* עיצוב של תיבת חיפוש  */
+    input[type=search] {
+        width: 250px;
+        padding: 10px;
+        border: 2px solid #F5C1E1;
+        border-radius: 20px; /* פינות מעוגלות */
+        font-family: Calibri;
+        font-size: 16px;
     }
-    /*עיצוב התאים*/
-    .pinkTable td {
-        padding: 12px;
-        text-align: center;
-        color: #555;
-        border-bottom: 1px solid #FBE9FA;
+        /*כשהאלמנט נבחר/פעיל להקלדה*/
+        input[type=search]:focus {
+            outline: none;
+            border-color: #E79ACB;
+        }
+
+
+
+    /* טבלה*/
+    /* כל הטבלה */
+    .pinkTable {
+        width: 75%;
+        margin: 30px auto; /*   30 פיקס למעלה ולמטה.*/
+        border-collapse: collapse; /*מחבר את כל הגבולות של התאים*/
+        background-color: white;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.1); /* יוצר צל*/
+        border-radius: 15px; /* פינות מעוגלות */
+        overflow: hidden;
+        font-family: Calibri;
     }
-    /*צביעת שורות - זוגי*/
-    .pinkTable tr:nth-child(even) {
-        background-color: #FDF5FC;
-    }
-    /*אפקט כשעוברים עם העכבר*/
-    .pinkTable tr:hover {
-        background-color: #FBE9FA;
-    }
-
-
-
-
-   /* עיצוב של חיפוש + שליחה */
-
-/* עיצוב של תיבת חיפוש  */
-input[type=search] {
-    width: 250px;
-    padding: 10px;
-    border: 2px solid #F5C1E1;
-    border-radius: 20px;
-    font-family: Calibri;
-    font-size: 16px;
-}
-    /*כשהאלמנט נבחר/פעיל להקלדה*/
-    input[type=search]:focus {
-        outline: none;
-        border-color: #E79ACB;
-    }
-
-
-
-
+        /*עיצוב שורת הכותרות*/
+        .pinkTable th {
+            background-color: #F5C1E1;
+            color: #4A4A4A;
+            font-size: 20px;
+            padding: 15px;
+        }
+        /*עיצוב התאים*/
+        .pinkTable td {
+            padding: 12px;
+            text-align: center;
+            color: #555;
+            border-bottom: 1px solid #FBE9FA;
+        }
+        /*צביעת שורות - זוגי*/
+        .pinkTable tr:nth-child(even) {
+            background-color: #FDF5FC;
+        }
+        /*אפקט כשעוברים עם העכבר*/
+        .pinkTable tr:hover {
+            background-color: #FBE9FA;
+        }
+        

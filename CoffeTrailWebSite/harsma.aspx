@@ -2,6 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"><!--בגלל מאסטר פייג-->
     <link href="css/login.css" rel="stylesheet" />
+
     <script language="javascript"> // שפת גאבה
         function checkAll() {
             // ניקוי שדות
@@ -125,7 +126,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-      <style>
+      <!--<style>
     body {
         background-image: url('images/yorky.png');
         background-repeat: no-repeat;
@@ -133,6 +134,7 @@
         background-size: 100% 100%;
     }
 </style>
+    -->
 
 
     <h1>הרשמה </h1>

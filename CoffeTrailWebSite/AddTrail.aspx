@@ -130,7 +130,7 @@ function checkDesc() {
     <h1> הוספת עגלה </h1>
 
     
- <form name="formPage" method="post" runat="server" onsubmit ="return checkAll();">
+ <form name="formPage" method="post" runat="server" onsubmit ="return checkAll();" enctype="multipart/form-data"> 
 
      :שם עגלה
      <input type="text" name="trailName" id="trailName" placeholder="עגלה1" >  
@@ -146,15 +146,18 @@ function checkDesc() {
       <br />
  <br />
 
-  <!-- <input type="file" name="pic" id="pic">   :תמונת העגלה - לשנות
+     :תמונת העגלה - לשנות
+  <input type="file" name="pic" id="pic" >   
 <br />
-     -->
+     
      :כתובת העגלה
      <br />
          <input type="text" name="address" id="address" placeholder="רח ,עיר "> 
      <span style="color:red"  id="addressErr"></span>
      <br />
       <br />
+
+ <br />
 
          ימי פעילות: 
  <br />

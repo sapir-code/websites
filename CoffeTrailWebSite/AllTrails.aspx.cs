@@ -13,8 +13,7 @@ public partial class simpleSearch : System.Web.UI.Page
     public string ln;
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (IsPostBack)
-        {
+       
             string name = Request.Form["trails"];
 
             // אוסף את כל הרשומות
@@ -36,38 +35,31 @@ public partial class simpleSearch : System.Web.UI.Page
             }
             else
             {
-                st += "<table class='pinkTable'>"; // יצירת טבלה - לעיצוב
-                st += "<tr >";
-                st += "<th> שם עגלה </th>";
-                st += "<th> אזור </th>";
-                st += "<th> כתובת </th>";
-                st += "<th> מקום בטוח </th>";
-                st += "<th> ימי פעילות </th>";
-                st += "<th> הערות </th>";
-                st += "</tr>";
-
-            }
-
-
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-                st += "<tr>";
-
-                for (int k = 0; k < dt.Columns.Count; k++)
+            st = "<div class='trailsBox'>";
+            
+                for (int i = 0; i < dt.Rows.Count; i++)
                 {
-                    if(k== 4 )
-                    {
-                        continue;
-                    }
-                    st += "<td>";
-                    st += dt.Rows[i][k];
-                    st += "</td>";
-                }
-                st += "</tr>";
-            }
+                    st += "<div class='trailCard'>";
 
-            st += "</table> ";
+                    st += "<img class='trailImg' src='Images/" + dt.Rows[i]["picture"].ToString() + "' />";
+
+                    st += "<div class='trailInfo'>";
+
+                    st += "<h2>" + dt.Rows[i]["name"] + "</h2>";
+
+                    st += "<p> <b>אזור:</b>" + dt.Rows[i]["area"] + "</p>";
+                    st += "<p> <b>כתובת:</b>" + dt.Rows[i]["address"] + "</p>";
+                    st += "<p> <b>מרחב מוגן:</b>" + dt.Rows[i]["safePlace"] + "</p>";
+                    st += "<p><b>ימי פעילות:</b> " + dt.Rows[i]["openingDays"] + "</p>";
+
+                    st += "<p>" + dt.Rows[i]["comment"] + "</p>";
+
+                    st += "</div>";
+                    st += "</div>";
+
+                }
+            st += "</div>";
         }
-    
-}
-}
+
+        }
+    }

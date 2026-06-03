@@ -1,0 +1,26 @@
+﻿/* הקלף עצמו*/
+.trailCard {
+    width: 350px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* התמונה בקלף*/
+.trailImg {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+/* התוכן שבקלף*/
+.trailInfo {
+    padding: 15px;
+}
+    /* שם העגלה שבכותרת*/
+    .trailInfo h2 {
+        margin-top: 0;
+    }

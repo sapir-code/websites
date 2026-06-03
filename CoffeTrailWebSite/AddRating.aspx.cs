@@ -13,8 +13,6 @@ public partial class harsma : System.Web.UI.Page
     public string strResult = "";
 
 
-    //riohamud//
-
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -37,7 +35,7 @@ public partial class harsma : System.Web.UI.Page
 
             MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);
 
-            Response.Redirect("homePage.aspx");
+            Response.Redirect("CoffeTrailRating.aspx");
         }
 
 
