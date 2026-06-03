@@ -19,13 +19,9 @@ public partial class harsma : System.Web.UI.Page
         if (Page.IsPostBack)
         {
             string fullname = Request.Form["fullname"];
-            string trailName = Request.Form["trailName"];
+            string trailName = allTrails.SelectedValue as string;
             string score = Request.Form["score"];
             string notes = Request.Form["textarea1"];
-
-
-
-
 
             string sqlInsert =
                 "INSERT INTO trailRating (fullname, trailName, score, note) " +

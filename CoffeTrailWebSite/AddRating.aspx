@@ -3,7 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <link href="css/rating.css" rel="stylesheet" />
 
-<script>
+<script language="JavaScript">
+   
     function setRating(num) {
         document.getElementById("score").value = num;
 
@@ -14,6 +15,33 @@
                 document.getElementById("star" + i).innerHTML = "☆";
         }
     }
+
+    function checkAll() {
+        
+       
+        trailErr.innerHTML = "";
+        nameErr.innerHTML = "";
+        var result = true;
+         
+        if (!checkName())
+            result = false;
+
+        return result;
+    }
+
+    function checkName() {
+
+        var name = document.getElementById("fullname").value;
+     
+        if (name.length == 0) {
+            nameErr.innerHTML = "חובה לרשום שם";
+            return false;
+        }
+
+        return true;
+    }
+
+
 </script>
 
 
@@ -30,15 +58,22 @@
 </style>
 
     <h1> הוסף דירוג </h1> 
- <form name="formPage" method="post" runat="server" >
+ <form name="formPage" method="post" runat="server"  onsubmit ="return checkAll();">
 
          :שם מלא
   <input type="text" name="fullname" id="fullname" placeholder="רשום שם">
      <br />
+     
+     <span style="color:red"  id="nameErr"></span>
+     <br />
+      <br />
 
      :שם העגלה 
     <asp:DropDownList ID="allTrails" runat="server"> </asp:DropDownList>
  <br />
+     <span style="color:red"  id="trailErr"></span>
+     <br />
+      <br />
 
    
    :דירוג
