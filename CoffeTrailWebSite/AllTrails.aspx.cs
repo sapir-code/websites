@@ -20,6 +20,7 @@ public partial class simpleSearch : System.Web.UI.Page
             string sql =
             "SELECT * FROM  trails ";
 
+
             if (!String.IsNullOrEmpty(name))
             {
                 sql += "WHERE name LIKE N'%" + name + "%' ";

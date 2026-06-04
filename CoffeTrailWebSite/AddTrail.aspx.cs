@@ -41,7 +41,7 @@ public partial class updateS : System.Web.UI.Page
 
               MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);
 
-               Response.Redirect("homePage.aspx");
+               Response.Redirect("AllTrails.aspx");
         }
 
         }

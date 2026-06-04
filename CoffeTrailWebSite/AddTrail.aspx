@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="AddTrail.aspx.cs" Inherits="updateS" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <link href="css/addTrails.css" rel="stylesheet" />
+   <!-- <link href="css/addTrails.css" rel="stylesheet" />-->
+    <link href="css/login.css" rel="stylesheet" />
 
     <script>
   
@@ -128,29 +129,44 @@ function checkDesc() {
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h1> הוספת עגלה </h1>
-
+    <style>
+        form { 
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 15px lightgray;
+    text-align: right;
+}
+    </style>
     
  <form name="formPage" method="post" runat="server" onsubmit ="return checkAll();" enctype="multipart/form-data"> 
 
-     :שם עגלה
+     שם עגלה:
      <input type="text" name="trailName" id="trailName" placeholder="עגלה1" >  
 
      <span style="color:red"  id="trailErr"></span>
      <br />
-      <br />
+    
 
-     :אזור
+     אזור:
      <input type="text" name="area" id="area" placeholder="שרון" > 
      
      <span style="color:red"  id="areaErr"></span>
       <br />
  <br />
 
-     :תמונת העגלה - לשנות
+    
+     תמונת העגלה:
+      <br />
   <input type="file" name="pic" id="pic" >   
 <br />
+      <br />
+      <br />
      
-     :כתובת העגלה
+     כתובת העגלה:
      <br />
          <input type="text" name="address" id="address" placeholder="רח ,עיר "> 
      <span style="color:red"  id="addressErr"></span>
@@ -174,7 +190,7 @@ function checkDesc() {
  <br />
      <br />
            
-     :מרחב מוגן
+     מרחב מוגן:
 <br />
  כן<input type="radio" name="radio1" value="כן" id="radio1">
 לא<input type="radio" name="radio1" value="לא" id="radio2">
@@ -184,12 +200,10 @@ function checkDesc() {
       <br />
 
 
-      :תיאור העגלה
+      תיאור העגלה:
       <textarea rows="5" cols="30" name="textarea1" id="textarea1" placeholder="מלל חופשי"></textarea> 
-
-       <br />
      <span style="color:red"  id="descErr"></span>
-      <br />
+     <br />
      
 
      <input type="submit" value="שלח" />

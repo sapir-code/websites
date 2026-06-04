@@ -17,7 +17,7 @@
     -->
  
 
-        <h1> כניסה</h1>
+        <h1> התחברות</h1>
 
      <form name="formPage" method="post" runat="server" >
 

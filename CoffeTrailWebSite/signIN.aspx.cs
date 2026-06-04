@@ -17,7 +17,7 @@ public partial class signIN : System.Web.UI.Page
             string email = Request.Form["email"];
             string password = Request.Form["password"];
 
-            if (email == "sapir.daniel1010@gmail.com" && password == "rspdan11")
+            if (email == "sapir.daniel@gmail.com" && password == "rsp")
             {
                 Session["nihol"] = "ok";
                 Session["name"] = "  ספיר המנהלת";

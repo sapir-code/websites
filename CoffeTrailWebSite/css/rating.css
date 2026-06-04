@@ -12,7 +12,7 @@ form {
     text-align: right;
 }
 h1 {
-    font-family: Calibri;
+    font-family: 'Guttman Aharoni';
     direction: rtl;
     text-align: center;
     color: black;
@@ -26,9 +26,12 @@ input[type=text] {
     margin-top: 10px;
     margin-bottom: 20px;
     border: 1px solid lightgray;
+    font-family: Calibri;
     border-radius: 10px;
     box-sizing: border-box;
 }
+
+/* כוכבים */
 .rating {
     font-size: 35px;
     cursor: pointer;
@@ -56,6 +59,7 @@ input[type=submit] {
     border-radius: 10px;
     font-size: 18px;
     cursor: pointer;
+    color: white;
 }
     /*עיצוב כפתור שליחה אחרי הלחיצה*/ 
     input[type=submit]:hover {

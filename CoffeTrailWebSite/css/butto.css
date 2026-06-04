@@ -5,10 +5,10 @@ input[type=submit] {
     background-color: #F5C1E1;
     color: black;
     border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
+    border-radius: 6px;
+    padding: 12px 36px;
     font-family: Calibri;
-    font-size: 16px;
+    font-size: 10px;
     cursor: pointer;
 }
     /*העכבר נמצא מעל כפתור השליחה*/

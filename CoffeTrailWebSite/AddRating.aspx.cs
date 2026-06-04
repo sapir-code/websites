@@ -19,7 +19,7 @@ public partial class harsma : System.Web.UI.Page
         if (Page.IsPostBack)
         {
             string fullname = Request.Form["fullname"];
-            string trailName = allTrails.SelectedValue as string;
+            string trailName = allTrails.SelectedValue as string; // ממיר את שמות העגלות למחרוזת
             string score = Request.Form["score"];
             string notes = Request.Form["textarea1"];
 
@@ -37,7 +37,7 @@ public partial class harsma : System.Web.UI.Page
 
         else
         {
-
+            // מזה עושה??
             FillTrails();
         }
 

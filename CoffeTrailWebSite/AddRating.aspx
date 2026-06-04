@@ -15,7 +15,7 @@
                 document.getElementById("star" + i).innerHTML = "☆";
         }
     }
-
+    // בדיקות תקינות למילוי שם בביקורת
     function checkAll() {
         
        
@@ -60,7 +60,7 @@
     <h1> הוסף דירוג </h1> 
  <form name="formPage" method="post" runat="server"  onsubmit ="return checkAll();">
 
-         :שם מלא
+        שם מלא:
   <input type="text" name="fullname" id="fullname" placeholder="רשום שם">
      <br />
      
@@ -68,7 +68,7 @@
      <br />
       <br />
 
-     :שם העגלה 
+     שם העגלה:
     <asp:DropDownList ID="allTrails" runat="server"> </asp:DropDownList>
  <br />
      <span style="color:red"  id="trailErr"></span>
@@ -76,7 +76,7 @@
       <br />
 
    
-   :דירוג
+   דירוג:
      <!-- פונקציה שאחראית לדירוג בכוכבים-->
 
 <div class="rating">
@@ -91,7 +91,7 @@
      <input type="hidden" name="score" id="score" value="0" />
  
 <br />
-     :הערות
+   הערות:
       <textarea rows="5" cols="30" name="textarea1" id="textarea1" placeholder="מלל חופשי"></textarea>  
  <br />
      <input type="submit" value="שלח" />

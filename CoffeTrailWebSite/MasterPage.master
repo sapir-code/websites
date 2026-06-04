@@ -6,7 +6,7 @@
 <html lang="he" dir="rtl">
 <head runat="server">
     <link href="css/MasterP2.css" rel="stylesheet" />
-
+    <link href="css/login.css" rel="stylesheet" />
 
     <title>עגלות הקפה של ישראל</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -54,8 +54,9 @@
 
          <%if (!(Session["nihol"]== "ok" || Session["user"]== "ok")){ %>
 
+          <li><a href="signIN.aspx">התחברות</a></li>
         <li><a href="harsma.aspx">הרשמה</a></li>
-         <li><a href="signIN.aspx">התחברות</a></li>
+       
          
 
 
@@ -72,6 +73,7 @@
 
          <li><a href ="CoffeTrailRating.aspx">דירוגי העגלות</a></li>
          <li><a href ="AllTrails.aspx">העגלות שלנו</a></li>
+        <li><a href="gallery.aspx">גלריה</a></li>
           <li><a href="bio.aspx">אודות</a></li>
         <li><a href="homePage.aspx">דף הבית</a></li>
 
