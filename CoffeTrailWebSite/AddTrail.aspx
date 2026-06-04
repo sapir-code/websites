@@ -140,7 +140,27 @@ function checkDesc() {
     box-shadow: 0 0 15px lightgray;
     text-align: right;
 }
+               
+      
+input[type=submit] {
+    
+    width: 400px;
+    background-color: #F5C1E1;
+    color: #F5C1E1;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: Calibri;
+    color: white;
+}
+    /*העכבר נמצא מעל כפתור השליחה*/
+    input[type=submit]:hover {
+        background-color: #FBE9FA;
+        }
     </style>
+ 
     
  <form name="formPage" method="post" runat="server" onsubmit ="return checkAll();" enctype="multipart/form-data"> 
 

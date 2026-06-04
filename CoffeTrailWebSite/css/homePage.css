@@ -2,22 +2,20 @@
 
 /* כל העיצוב של הדף */
 .about-site {
-    width: 85%;
+    width: 100%;
     margin: 60px auto;
     background: white;
     border-radius: 20px;
     overflow: hidden;
     display: flex;
-    align-items: center;
+     align-items: center;
     box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-  
     justify-content: space-between;
-    
 }
 
 /* העיצוב של הטקסט */
 .about-content {
-    width: 50%;
+    width: 100%;
     padding: 40px;
     text-align: right;
 }
@@ -28,6 +26,7 @@
         font-size: 36px;
         margin-bottom: 25px;
         font-family: 'Guttman Aharoni';
+        text-align: center;
     }
 
     /* עיצוב של פסקה */
@@ -42,8 +41,8 @@
 /* גודל תמונה */
 .about-image {
     width: 50%;
-    top: 0px;
-    left: 50px;
+    top: 10px;
+    left: 100px;
 }
     /* עיצוב נוסף של תמונה */
     .about-image img {
@@ -53,7 +52,4 @@
        
         
     }     
-    .about-image img {
-        height: 280px;
-    }
-
+    
