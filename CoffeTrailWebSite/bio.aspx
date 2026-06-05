@@ -8,8 +8,8 @@
 
     <style>
   .myPhoto {
-   width: 250px;
-    height: 250px;
+   width: 400px;
+    height: 400px;
     object-fit: cover;
     border-radius: 50%;
 
@@ -22,7 +22,6 @@
 
     <div class="about-content">
 
-
 <p>
    היי אני ספיר המתכנתת,
     <br />
@@ -32,12 +31,9 @@
     <br />
    </p>
 
-        
-       
-    <img src="images/myPic.jpeg" class="myPhoto">
-
 
     </div>
+            <img src="images/myPic.jpeg" class="myPhoto">
 </section>
 
 

@@ -50,7 +50,7 @@
 
           <style>
     body {
-        background-image: url('images/stars.jpeg');
+        background-image: url('images/stars.png');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: 100% 100%;

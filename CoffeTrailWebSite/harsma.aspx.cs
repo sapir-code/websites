@@ -39,7 +39,7 @@ public partial class harsma : System.Web.UI.Page
 
                 MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);
 
-                Response.Redirect("homePage.aspx");
+                Response.Redirect("signIn.aspx");
             }
 
         }

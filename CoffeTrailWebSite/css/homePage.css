@@ -2,13 +2,13 @@
 
 /* כל העיצוב של הדף */
 .about-site {
-    width: 100%;
+    width: 80%;
     margin: 60px auto;
     background: white;
     border-radius: 20px;
     overflow: hidden;
     display: flex;
-     align-items: center;
+
     box-shadow: 0 5px 20px rgba(0,0,0,0.15);
     justify-content: space-between;
 }
@@ -16,7 +16,7 @@
 /* העיצוב של הטקסט */
 .about-content {
     width: 100%;
-    padding: 40px;
+    padding: 50px;
     text-align: right;
 }
 
@@ -24,32 +24,32 @@
     .about-content h2 {
         color: #5b3a29;
         font-size: 36px;
-        margin-bottom: 25px;
         font-family: 'Guttman Aharoni';
         text-align: center;
     }
 
     /* עיצוב של פסקה */
     .about-content p {
+        width: 100%;
         font-size: 18px;
         line-height: 1.9;
         color: #555;
-        margin-bottom: 18px;
         font-family: Calibri;
     }
 
 /* גודל תמונה */
 .about-image {
+    padding: 20px;
     width: 50%;
     top: 10px;
     left: 100px;
+    
 }
     /* עיצוב נוסף של תמונה */
     .about-image img {
-        width: 100%;
+        width: 95%;
         height: 400px;
         object-fit: cover;
-       
-        
+        border-radius: 10%;
     }     
     
