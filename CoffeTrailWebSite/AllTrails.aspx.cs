@@ -8,9 +8,8 @@ using System.Web.UI.WebControls;
 
 public partial class simpleSearch : System.Web.UI.Page
 {
-    public string st = ""; // <table>
-    public string fn;
-    public string ln;
+    public string st = ""; 
+   
     protected void Page_Load(object sender, EventArgs e)
     {
        
@@ -21,6 +20,7 @@ public partial class simpleSearch : System.Web.UI.Page
             "SELECT * FROM  trails ";
 
 
+        // חיפוש - לייק
             if (!String.IsNullOrEmpty(name))
             {
                 sql += "WHERE name LIKE N'%" + name + "%' ";
@@ -41,19 +41,20 @@ public partial class simpleSearch : System.Web.UI.Page
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
                     st += "<div class='trailCard'>";
-
                     st += "<img class='trailImg' src='Images/" + dt.Rows[i]["picture"].ToString() + "' />";
-
                     st += "<div class='trailInfo'>";
 
-                    st += "<h2>" + dt.Rows[i]["name"] + "</h2>";
+                st += "<h2>" + dt.Rows[i]["name"] + "</h2>";
 
-                    st += "<p> <b>אזור:</b>" + dt.Rows[i]["area"] + "</p>";
-                    st += "<p> <b>כתובת:</b>" + dt.Rows[i]["address"] + "</p>";
-                    st += "<p> <b>מרחב מוגן:</b>" + dt.Rows[i]["safePlace"] + "</p>";
-                    st += "<p><b>ימי פעילות:</b> " + dt.Rows[i]["openingDays"] + "</p>";
+                st += "<p> <b>אזור:</b>" + dt.Rows[i]["area"] + "</p>";
 
-                    st += "<p>" + dt.Rows[i]["comment"] + "</p>";
+                st += "<p> <b>כתובת:</b>" + dt.Rows[i]["address"] + "</p>";
+
+                st += "<p> <b>מרחב מוגן:</b>" + dt.Rows[i]["safePlace"] + "</p>";
+
+                st += "<p><b>ימי פעילות:</b> " + dt.Rows[i]["openingDays"] + "</p>";
+
+                 st += "<p>" + dt.Rows[i]["comment"] + "</p>";
 
                     st += "</div>";
                     st += "</div>";

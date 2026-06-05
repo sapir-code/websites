@@ -3,7 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 
     <link href="css/manege.css" rel="stylesheet" />
-   <!-- <link href="css/butto.css" rel="stylesheet" />-->
     <link href="css/addTrails.css" rel="stylesheet" /> 
 
 
@@ -27,7 +26,28 @@ input[type=submit] {
     /*העכבר נמצא מעל כפתור השליחה*/
     input[type=submit]:hover {
         background-color: #FBE9FA;
-    }
+}
+        /* כרטיס עגלה */
+.trailCard {
+    width: 430px;
+    background-color: #f8f5f2;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+.trailInfo p {
+    margin: 8px 0;
+    line-height: 1.5;
+    font-size:18px;
+}
+.trailInfo h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #5b3d2e;
+      font-size:25px;
+}
+    
 
     </style>
     <h1> העגלות שלנו </h1>
@@ -37,12 +57,17 @@ input[type=submit] {
             <input type="search" name="trails" id="trails" placeholder="חיפוש עגלה" />
             <input type="submit" value="שלח" />
 
-            <br />
+           
+         <br />
 
        
 </form>
+     <br />
+ <br />
+ <br />
+    <br />
 
     <% = st %>
-    <br />
+  
 </asp:Content>
 

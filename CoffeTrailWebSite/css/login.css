@@ -33,6 +33,7 @@ input[type=password] {
 }
 /*הערות  */
 textarea {
+    font-family: Calibri;
     width: 100%;
     padding: 12px;
     margin-top: 10px;

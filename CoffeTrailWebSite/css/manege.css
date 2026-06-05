@@ -7,7 +7,7 @@ input[type=search] {
     padding: 10px;
     border: 2px solid #F5C1E1;
     border-radius: 20px; /* פינות מעוגלות */
-    font-family: 'Guttman Aharoni';
+    font-family: Calibri;
     font-size: 16px;
 }
         /*כשהאלמנט נבחר/פעיל להקלדה*/

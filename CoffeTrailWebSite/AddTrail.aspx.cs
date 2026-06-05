@@ -27,7 +27,8 @@ public partial class updateS : System.Web.UI.Page
             string safe =  Request.Form["radio1"];
             string comment = Request.Form["textarea1"];
 
-            HttpPostedFile file = Request.Files["pic"]; // לוקח א אוביקט התמונה מהטופס 
+
+            HttpPostedFile file = Request.Files["pic"]; // לוקח את אוביקט התמונה מהטופס 
             string pic = Path.GetFileName(file.FileName); // מוצא את שם הקובץ של התמונה מתוך האוביקט תמונה
             file.SaveAs(Server.MapPath("~/Images/" + pic)); // שומר את הקובץ תחת תקיית תמונות איפה שהשרת נמצא
            // למסד הנתונים ישמר רק שם הקובץ

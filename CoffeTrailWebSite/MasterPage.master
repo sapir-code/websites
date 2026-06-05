@@ -47,21 +47,15 @@
 
     <ul>
 
-         <%if (Session["nihol"]== "ok" ){ %>
-         <li><a href="manege.aspx">מנהל</a></li>
-<%  } %>
-
+        
 
          <%if (!(Session["nihol"]== "ok" || Session["user"]== "ok")){ %>
 
           <li><a href="signIN.aspx">התחברות</a></li>
         <li><a href="harsma.aspx">הרשמה</a></li>
-       
-         
 
-
- 
         <%  } %>
+
 
         <% else { %>
         <li><a href="exit.aspx">יציאה</a>&nbsp;</li>
@@ -69,6 +63,11 @@
          <li><a href =" AddTrail.aspx">הוסף עגלה</a></li>
         
          <%  } %>
+
+           <%if (Session["nihol"]== "ok" ){ %>
+         <li><a href="manege.aspx">מנהל</a></li>
+         <%  } %>
+
 
 
          <li><a href ="CoffeTrailRating.aspx">דירוגי העגלות</a></li>

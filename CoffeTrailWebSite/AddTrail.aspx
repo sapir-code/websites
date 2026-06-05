@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="AddTrail.aspx.cs" Inherits="updateS" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-   <!-- <link href="css/addTrails.css" rel="stylesheet" />-->
     <link href="css/login.css" rel="stylesheet" />
 
     <script>
@@ -16,7 +15,7 @@ function checkAll() {
     safeErr.innerHTML = "";
     descErr.innerHTML = "";
 
-    var result = true;
+     result = true;
 
     if (!checkTrailName())
         result = false;
@@ -41,7 +40,7 @@ function checkAll() {
 
 function checkTrailName() {
 
-    var trail = document.getElementById("trailName").value;
+     trail = document.getElementById("trailName").value;
 
     if (trail.length < 2 || trail.length > 20) {
         trailErr.innerHTML = "שם העגלה חייב להכיל בין 2 ל-20 תווים";
@@ -53,7 +52,7 @@ function checkTrailName() {
 
 function checkArea() {
 
-    var area = document.getElementById("area").value;
+     area = document.getElementById("area").value;
 
     if (area.length == 0) {
         areaErr.innerHTML = "יש להזין אזור";
@@ -62,7 +61,7 @@ function checkArea() {
 
     for (var i = 0; i < area.length; i++) {
 
-        var ch = area.charAt(i);
+         ch = area.charAt(i);
 
         if (!(ch >= 'א' && ch <= 'ת') && ch != ' ') {
             areaErr.innerHTML = "האזור יכול להכיל אותיות ורווחים בלבד";
@@ -75,7 +74,7 @@ function checkArea() {
 
 function checkAddress() {
 
-    var address = document.getElementById("address").value;
+     address = document.getElementById("address").value;
 
     if (address.length == 0) {
         addressErr.innerHTML = "יש להזין כתובת";
@@ -85,6 +84,7 @@ function checkAddress() {
     return true;
 }
 
+// האם לפחות אחד מהשדות בחור?
 function checkDays() {
 if (!document.getElementById("day1").checked &&
     !document.getElementById("day2").checked &&
@@ -114,7 +114,7 @@ function checkSafe() {
 
 function checkDesc() {
 
-    var desc = document.getElementById("textarea1").value;
+    desc = document.getElementById("textarea1").value;
 
     if (desc.length > 100) {
         descErr.innerHTML = "התיאור יכול להכיל עד 100 תווים";
@@ -132,7 +132,7 @@ function checkDesc() {
     <style>
         form { 
     width: 400px;
-    margin: auto;
+    margin: auto; 
     margin-top: 50px;
     padding: 30px;
     background-color: white;
@@ -210,7 +210,7 @@ input[type=submit] {
  <br />
      <br />
            
-     מרחב מוגן:
+     מרחב מוגן קרוב:
 <br />
  כן<input type="radio" name="radio1" value="כן" id="radio1">
 לא<input type="radio" name="radio1" value="לא" id="radio2">

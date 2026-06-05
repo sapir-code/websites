@@ -85,8 +85,8 @@
         function checkpass() {
                 var pass = document.getElementById("pasword").value;
 
-                if (pass.length < 8) {
-                    passErr.innerHTML = "הסיסמה חייבת להכיל לפחות 8 תווים";
+                if (pass.length < 6) {
+                    passErr.innerHTML = "הסיסמה חייבת להכיל לפחות 6 תווים";
                     return false;
                 }
 

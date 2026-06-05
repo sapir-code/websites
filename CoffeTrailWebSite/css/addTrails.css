@@ -8,7 +8,7 @@
 
 /* כרטיס עגלה */
 .trailCard {
-    width: 200px;
+    width: 400px;
     background-color: #f8f5f2;
     border-radius: 25px;
     overflow: hidden;
@@ -32,6 +32,7 @@
 .trailInfo {
     background-color: white;
     padding: 20px;
+    
 }
 
     /* שם העגלה */
@@ -45,4 +46,5 @@
     .trailInfo p {
         margin: 8px 0;
         line-height: 1.5;
+        font-size:18px;
     }

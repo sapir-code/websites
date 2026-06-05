@@ -19,7 +19,7 @@ public partial class harsma : System.Web.UI.Page
         if (Page.IsPostBack)
         {
             string fullname = Request.Form["fullname"];
-            string trailName = allTrails.SelectedValue as string; // ממיר את שמות העגלות למחרוזת
+            string trailName = allTrails.SelectedValue as string; // ממיר את שם העגלה שנבחרה למחרוזת
             string score = Request.Form["score"];
             string notes = Request.Form["textarea1"];
 
@@ -29,7 +29,7 @@ public partial class harsma : System.Web.UI.Page
 
 
 
-            MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);
+            MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert); // הרצת שאילת על מסד הנתונים ללא קבלת תשובה
 
             Response.Redirect("CoffeTrailRating.aspx");
         }
@@ -37,7 +37,7 @@ public partial class harsma : System.Web.UI.Page
 
         else
         {
-            // מזה עושה??
+            // פעולה שממלאה את הרשימת העגלות מתוך מסד הנתונים
             FillTrails();
         }
 
@@ -48,12 +48,12 @@ public partial class harsma : System.Web.UI.Page
 
         string sql = "SELECT name FROM trails";
 
-        DataTable dt = MyAdoHelper.ExecuteDataTable( sql);
+        DataTable dt = MyAdoHelper.ExecuteDataTable( sql); // לבקש מידע מהטבלה ולקבל בתשובה את המידע מהטבלה
 
-        allTrails.DataSource = dt;
-        allTrails.DataTextField = "name";
-        allTrails.DataValueField = "name";
-        allTrails.DataBind();
+        allTrails.DataSource = dt; // מקור המידע
+        allTrails.DataTextField = "name"; // מה יוצג ברשימה
+        allTrails.DataValueField = "name"; // איזה ערך מתקבל
+        allTrails.DataBind(); // לקשר את המידע של הטבלה עם הטופס 
     }
 
 }
