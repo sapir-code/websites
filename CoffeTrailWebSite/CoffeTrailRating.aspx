@@ -18,8 +18,8 @@
     border-radius: 20px; /* פינות מעוגלות */
     padding: 15px;
     margin: 15px;
-    display: inline-block;
-    vertical-align: top;
+    display: inline-block; /* מציג את האלמנט בשורה עם אלמנטים נוספים */
+    vertical-align: top; /* מיישר את החלק העליון של האלמנט ביחס לאלמנטים שנמצאים לידו */
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     text-align: right;
 }

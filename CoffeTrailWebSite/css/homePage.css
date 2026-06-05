@@ -1,55 +1,52 @@
-﻿
-
-/* כל העיצוב של הדף */
+﻿/* כל העיצוב של הדף */
 .about-site {
     width: 80%;
-    margin: 60px auto;
-    background: white;
-    border-radius: 20px;
-    overflow: hidden;
-    display: flex;
+    margin: 60px auto; /* רווח חיצוני  */
+    background: white; 
+    border-radius: 20px; /* מעגל את פינות האלמנט */
+    overflow: hidden; /* מסתיר תוכן שחורג מגבולות האלמנט */
+    display: flex; /* מסדר את האלמנטים הפנימיים בשיטת Flex */
 
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-    justify-content: space-between;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15); /* מוסיף צל לאלמנט */
+    justify-content: space-between; /* יוצר רווח בין האלמנטים הפנימיים */
 }
 
 /* העיצוב של הטקסט */
 .about-content {
-    width: 100%;
-    padding: 50px;
-    text-align: right;
+    width: 100%; 
+    padding: 50px; /* רווח פנימי */
+    text-align: right; 
 }
 
     /* עיצוב של הכותרת */
     .about-content h2 {
-        color: #5b3a29;
+        color: #5b3a29; 
         font-size: 36px;
-        font-family: 'Guttman Aharoni';
-        text-align: center;
+        font-family: 'Guttman Aharoni'; 
+        text-align: center; 
     }
 
     /* עיצוב של פסקה */
     .about-content p {
-        width: 100%;
-        font-size: 20px;
-        line-height: 1.9;
-        color: #555;
-        font-family: Calibri;
+        width: 100%; 
+        font-size: 20px; 
+        line-height: 1.9; /* גובה השורות */
+        color: #555; 
+        font-family: Calibri; 
     }
 
 /* גודל תמונה */
 .about-image {
-    padding: 20px;
-    width: 50%;
+    padding: 20px; /* רווח פנימי  */
+    width: 50%; 
     top: 10px;
-    left: 100px;
-    
+    left: 100px; 
 }
+
     /* עיצוב נוסף של תמונה */
     .about-image img {
-        width: 95%;
-        height: 400px;
-        object-fit: cover;
-        border-radius: 10%;
-    }     
-    
+        width: 95%; 
+        height: 400px; 
+        object-fit: cover; /* ממלא את כל שטח התמונה  */
+        border-radius: 10%; /* מעגל את פינות התמונה */
+    }

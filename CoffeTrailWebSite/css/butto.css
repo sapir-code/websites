@@ -4,12 +4,12 @@
 input[type=submit] {
     background-color: #F5C1E1;
     color: black;
-    border: none;
-    border-radius: 6px;
-    padding: 12px 36px;
     font-family: Calibri;
     font-size: 10px;
-    cursor: pointer;
+    border: none; /* מבטל את המסגרת של הכפתור */
+    border-radius: 6px; /* מעגל את פינות הכפתור ב-6 פיקסלים */
+    cursor: pointer; /* משנה את צורת הסמן ליד כאשר עוברים מעל הכפתור */
+    padding: 12px 36px; /* רווח פנימי: 12 פיקסלים למעלה ולמטה, 36 פיקסלים מימין ומשמאל */
 }
     /*העכבר נמצא מעל כפתור השליחה*/
     input[type=submit]:hover {

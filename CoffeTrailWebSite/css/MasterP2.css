@@ -1,24 +1,24 @@
-﻿ul {
-
-    width: fit-content;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+﻿/*כל הסרגל*/
+ul {
+    width: fit-content; /* רוחב הרשימה יהיה בהתאם לתוכן שבה */
+    list-style-type: none; /* מבטל את הנקודות של הרשימה */
+    margin: 0; /* מבטל רווח חיצוני */
+    padding: 0; /* מבטל רווח פנימי */
+    overflow: hidden; /* מסתיר תוכן שחורג מגבולות האלמנט */
     background-color: #F5C1E1;
 }
-li {
-    float: left;
-   
-}
 
+li {
+    float: left; /* מציג את פריטי הרשימה אחד ליד השני */
+}
+    /*כל דף בנפרד*/
     li a {
-        display: block;
+        display: block; /* הופך את הקישור לאלמנט בלוק */
         color: white;
         font-family: Calibri;
         font-size: 30px;
-        padding: 18px;
-        text-decoration: none;
+        padding: 18px; /* רווח פנימי  */
+        text-decoration: none; /* מבטל את הקו התחתון של הקישור */
     }
 
         li a:hover {
@@ -26,6 +26,5 @@ li {
         }
 
         li a:active {
-            background-color: #F5C1E1;
+            background-color: #F5C1E1; 
         }
-

@@ -6,11 +6,11 @@
 <script language="JavaScript">
    
     function setRating(num) {
-        document.getElementById("score").value = num;
+        document.getElementById("score").value = num; // הפונקציה תקבל את המספר הכוכבים שלחצו 
 
         for (var i = 1; i <= 5; i++) {
             if (i <= num)
-                document.getElementById("star" + i).innerHTML = "★";
+                document.getElementById("star" + i).innerHTML = "★"; // תצייר כוכב מלא לפי הנלחץ
             else
                 document.getElementById("star" + i).innerHTML = "☆";
         }
@@ -51,8 +51,8 @@
           <style>
     body {
         background-image: url('images/stars.png');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-repeat: no-repeat; /* מונע מתמונת הרקע לחזור על עצמה מספר פעמים */
+        background-attachment: fixed; /* גורם לתמונת הרקע להישאר קבועה במקום בזמן גלילת הדף */
         background-size: 100% 100%;
     }
 </style>

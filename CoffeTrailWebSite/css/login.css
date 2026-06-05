@@ -1,63 +1,62 @@
 ﻿body {
-    background-color: #FFF4FA;
-    font-family: Calibri;
+    background-color: #FFF4FA; 
+    font-family: Calibri; 
 }
+
 h1 {
-    font-family: 'Guttman Aharoni';
+    font-family: 'Guttman Aharoni'; 
 }
-
-
 
 /*עיצוב על הדף*/
-form { 
-    width: 300px;
-    margin: auto;
-    margin-top: 50px;
-    padding: 30px;
-    background-color: white;
-    border-radius: 25px;
-    box-shadow: 0 0 15px lightgray;
-    text-align: right;
+form {
+    width: 300px; 
+    margin: auto; /* מרכוז הטופס */
+    margin-top: 50px; /* רווח מעל הטופס */
+    padding: 30px; 
+    background-color: white; /* צבע רקע לבן */
+    border-radius: 25px; 
+    box-shadow: 0 0 15px lightgray; /* צל מסביב לטופס */
+    text-align: right; /* יישור הטקסט לימין */
 }
 
 /*עיצוב של איפה שרושמים*/
 input[type=text],
 input[type=password] {
-    width: 100%;
-    padding: 12px;
+    width: 100%; 
+    padding: 12px; 
     margin-top: 10px;
-    margin-bottom: 20px;
-    border: 1px solid lightgray;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-/*הערות  */
-textarea {
-    font-family: Calibri;
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border: 1px solid lightgray;
-    border-radius: 10px;
-    box-sizing: border-box;
+    margin-bottom: 20px; 
+    border: 1px solid lightgray; 
+    border-radius: 10px; 
+    box-sizing: border-box; 
 }
 
-/* עיצוב של כפתור   */
-input[type=submit] {
-    width: 300px;
-    background-color: #F5C1E1;
-    color: #F5C1E1;
-    border: none;
+/*הערות*/
+textarea {
+    font-family: Calibri; 
+    width: 100%; 
+    padding: 12px; /* רווח פנימי */
+    margin-top: 10px; /* רווח מעל התיבה */
+    margin-bottom: 20px; /* רווח מתחת לתיבה */
+    border: 1px solid lightgray; /* מסגרת אפורה */
     border-radius: 10px;
-    padding: 20px;
-    font-size: 25px;
-    cursor: pointer;
-    font-family: Calibri;
+    box-sizing: border-box; 
+}
+
+/* עיצוב של כפתור */
+input[type=submit] {
+    width: 300px; 
+    background-color: #F5C1E1; 
+    border: none; /* ללא מסגרת */
+    border-radius: 10px; 
+    padding: 20px; /* רווח פנימי  */
+    font-size: 25px; 
+    cursor: pointer; /* שינוי סמן העכבר ליד */
+    font-family: Calibri; 
     color: white;
 }
+
     /*העכבר נמצא מעל כפתור השליחה*/
     input[type=submit]:hover {
-        background-color: #FBE9FA;
+        background-color: #FBE9FA; 
     }
-

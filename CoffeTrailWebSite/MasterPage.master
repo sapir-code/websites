@@ -17,8 +17,8 @@
           <style>
     body {
         background-image: url('images/back.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-repeat: no-repeat; /* מונע מתמונת הרקע לחזור על עצמה מספר פעמים */
+        background-attachment: fixed; /* גורם לתמונת הרקע להישאר קבועה במקום בזמן גלילת הדף */
         background-size: 100% 100%;
     }
         .logoImg {
@@ -47,7 +47,9 @@
 
     <ul>
 
-        
+          <%if (Session["nihol"]== "ok" ){ %>
+           <li><a href="manege.aspx">מנהל</a></li>
+           <%  } %>
 
          <%if (!(Session["nihol"]== "ok" || Session["user"]== "ok")){ %>
 
@@ -64,9 +66,7 @@
         
          <%  } %>
 
-           <%if (Session["nihol"]== "ok" ){ %>
-         <li><a href="manege.aspx">מנהל</a></li>
-         <%  } %>
+          
 
 
 

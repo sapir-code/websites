@@ -1,50 +1,50 @@
 ﻿/* מיכל לכל העגלות */
 .trailsBox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
+    display: flex; /* מסדר את הכרטיסים בשורה */
+    flex-wrap: wrap; /* אם אין מקום בשורה, יורד לשורה הבאה */
+    justify-content: center; /* ממקם את הכרטיסים במרכז */
+    gap: 25px; /* רווח של 25 פיקסלים בין הכרטיסים */
 }
 
 /* כרטיס עגלה */
 .trailCard {
-    width: 400px;
-    background-color: #f8f5f2;
-    border-radius: 25px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transition: 0.3s;
+    width: 400px; /* רוחב הכרטיס */
+    background-color: #f8f5f2; /* צבע רקע */
+    border-radius: 25px; /* עיגול פינות */
+    overflow: hidden; /* מסתיר תוכן שיוצא מגבולות הכרטיס */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* צל מסביב לכרטיס */
+    transition: 0.3s; /* זמן המעבר של אפקטים */
 }
 
+    /* לאחר מעבר של העכבר על הכרטיס */
     .trailCard:hover {
-        transform: translateY(-5px);
+        transform: translateY(-5px); 
     }
 
 /* תמונה */
 .trailImg {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    display: block;
+    width: 100%; /* התמונה תתפוס את כל רוחב הכרטיס */
+    height: 220px; /* גובה התמונה */
+    object-fit: cover; /* חותך את התמונה כדי שתמלא את כל האזור */
+    display: block; /* מציג את התמונה כבלוק */
 }
 
 /* החלק הלבן */
 .trailInfo {
-    background-color: white;
-    padding: 20px;
-    
+    background-color: white; /* צבע רקע לבן */
+    padding: 20px; /* רווח פנימי בין התוכן לגבולות */
 }
 
     /* שם העגלה */
     .trailInfo h2 {
-        margin-top: 0;
-        margin-bottom: 15px;
-        color: #5b3d2e;
+        margin-top: 0; /* מבטל רווח חיצוני עליון */
+        margin-bottom: 15px; /* רווח חיצוני מתחת לכותרת */
+        color: #5b3d2e; /* צבע הטקסט */
     }
 
     /* טקסט */
     .trailInfo p {
-        margin: 8px 0;
-        line-height: 1.5;
-        font-size:18px;
+        margin: 8px 0; /* רווח חיצוני של 8 פיקסלים למעלה ולמטה */
+        line-height: 1.5; /* גובה השורה */
+        font-size: 18px; /* גודל הטקסט */
     }

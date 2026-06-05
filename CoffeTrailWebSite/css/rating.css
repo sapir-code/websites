@@ -1,68 +1,65 @@
-﻿
-
-/*עיצוב על הדף*/
-form { 
+﻿/*עיצוב על הדף*/
+form {
     width: 300px;
-    margin: auto;
-    margin-top: 50px;
-    padding: 30px;
+    margin: auto; /* ממרכז את הטופס */
+    margin-top: 50px; /* רווח מעל הטופס */
+    padding: 30px; /* רווח פנימי  */
     background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 0 15px lightgray;
-    text-align: right;
+    border-radius: 20px; /* מעגל את פינות הטופס */
+    box-shadow: 0 0 15px lightgray; 
+    text-align: right; /* מיישר את הטקסט לימין */
 }
+
 h1 {
     font-family: 'Guttman Aharoni';
-    direction: rtl;
-    text-align: center;
+    direction: rtl; /* קובע כיוון כתיבה מימין לשמאל */
+    text-align: center; /* ממרכז את הכותרת */
     color: black;
-    margin-top: 30px;
+    margin-top: 30px; /* רווח מעל הכותרת */
 }
 
 /*עיצוב של איפה שרושמים*/
 input[type=text] {
     width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border: 1px solid lightgray;
+    padding: 12px; /* רווח פנימי */
+    margin-top: 10px; /* רווח מעל השדה */
+    margin-bottom: 20px; /* רווח מתחת לשדה */
+    border: 1px solid lightgray; /* מסגרת סביב השדה */
     font-family: Calibri;
-    border-radius: 10px;
-    box-sizing: border-box;
+    border-radius: 10px; /* מעגל את פינות השדה */
+    box-sizing: border-box; /* כולל את המסגרת והריווח בתוך הרוחב */
 }
 
 /* כוכבים */
 .rating {
     font-size: 35px;
-    cursor: pointer;
+    cursor: pointer; /* משנה את הסמן ליד בעת מעבר מעל הכוכבים */
     color: gold;
 }
 
 textarea {
     width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border: 1px solid lightgray;
-    border-radius: 10px;
-    box-sizing: border-box;
+    padding: 12px; /* רווח פנימי  */
+    margin-top: 10px; /* רווח מעל התיבה */
+    margin-bottom: 20px; /* רווח מתחת לתיבה */
+    border: 1px solid lightgray; /* מסגרת סביב התיבה */
+    border-radius: 10px; /* מעגל את פינות התיבה */
+    box-sizing: border-box; /* כולל את המסגרת והריווח בתוך הרוחב */
 }
-
-
 
 /*עיצוב כפתור שליחה*/
 input[type=submit] {
     width: 100%;
-    padding: 12px;
+    padding: 12px; /* רווח פנימי  */
     background-color: #F5C1E1;
-    border: none;
-    border-radius: 10px;
+    border: none; /* מבטל את המסגרת של הכפתור */
+    border-radius: 10px; /* מעגל את פינות הכפתור */
     font-size: 18px;
-    cursor: pointer;
+    cursor: pointer; /* משנה את הסמן ליד */
     color: white;
 }
-    /*עיצוב כפתור שליחה אחרי הלחיצה*/ 
-    input[type=submit]:hover {
-        background-color: #eba8d2;
-    }
 
+    /*עיצוב כפתור שליחה אחרי הלחיצה*/
+    input[type=submit]:hover {
+        background-color: #eba8d2; 
+    }

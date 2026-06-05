@@ -10,7 +10,7 @@
   .myPhoto {
    width: 400px;
     height: 400px;
-    object-fit: cover;
+    object-fit: cover;/*  התמונה ממלא את כל השטח שהוגדר גם אם חלק ממנה ייחתך */
     border-radius: 50%;
 
     float: left;
