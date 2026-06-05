@@ -13,7 +13,7 @@ li {
 }
     /*כל דף בנפרד*/
     li a {
-        display: block; /* הופך את הקישור לאלמנט בלוק */
+        display: block; /*  הופך את הקישור לאלמנט בלוק */
         color: white;
         font-family: Calibri;
         font-size: 30px;
