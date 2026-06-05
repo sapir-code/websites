@@ -38,7 +38,7 @@ public partial class signIN : System.Web.UI.Page
                 if (dt.Rows.Count == 0)
                 {
                     stResult = "אימייל או סיסמה שגויים";
-                    Session["name"] = "  אורח ";
+                    Session["name"] = " אורח ";
                 }
                 else
                 {

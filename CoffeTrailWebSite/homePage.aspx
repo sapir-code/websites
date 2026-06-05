@@ -4,17 +4,7 @@
      <link href="css/homePage.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-     <!-- <style>
-    body {
-        background-image: url('images/rioooo.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-    }
-
-
-</style>
--->
+   
 
     <section class="about-site">
 

@@ -11,7 +11,7 @@ public partial class harsma : System.Web.UI.Page
 {
     public string strResult = "";
 
-    //riohamud//
+    
 
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -24,7 +24,7 @@ public partial class harsma : System.Web.UI.Page
             string notes = Request.Form["textarea1"];
 
 
-            string sqlSelect = "SELECT * FROM  tUsers" + " WHERE email = N'" +email +"' ";
+            string sqlSelect = "SELECT * FROM  tUsers WHERE email = N'" +email +"' ";
 
             bool exists = MyAdoHelper.IsExist(sqlSelect);
 

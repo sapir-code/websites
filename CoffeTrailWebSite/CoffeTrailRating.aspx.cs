@@ -10,8 +10,7 @@ public partial class manege : System.Web.UI.Page
 {
 
     public string st = ""; // <table>
-    public string fn;
-    public string ln;
+    
 
     protected void Page_Load(object sender, EventArgs e)
     {

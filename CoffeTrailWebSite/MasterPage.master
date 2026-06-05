@@ -37,7 +37,7 @@
 
      
 
-    <%if (Session["nihol"]== "ok" || Session["user"]== "ok"){ %>
+  <%if (Session["nihol"]== "ok" || Session["user"]== "ok"){ %> 
 
     שלום  <%=Session["name"] %>
     
@@ -87,7 +87,7 @@
    <img src="images/trail.png" class="logoImg" /></a>
 
 
-    <!--<li><a href="simpleSearch.aspx">חיפוש פשוט</a></li></a>-->
+   
 
 
 

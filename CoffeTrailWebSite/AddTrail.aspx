@@ -116,8 +116,8 @@ function checkDesc() {
 
     desc = document.getElementById("textarea1").value;
 
-    if (desc.length > 100) {
-        descErr.innerHTML = "התיאור יכול להכיל עד 100 תווים";
+    if (desc.length > 200) {
+        descErr.innerHTML = "התיאור יכול להכיל עד 200 תווים";
         return false;
     }
 
